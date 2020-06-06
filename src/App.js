@@ -1,13 +1,23 @@
 import React from 'react';
-import './App.css';
-import Hello from "./hello"
+import './mystyle.css';
 
-function App({name , age}) {
+
+function App({name}) {
   return (
     <div>
-      Hello from App.Js by {name} and my age is {age}
-      <br/>
-      <Hello firstname={name}/>
+      <p className="myName">Hello I am <strong>{name}</strong> and my age is {10+10+2}! </p>
+      <h3> This is a Heading Element</h3>
+      <ol>
+        <li> Ordered List 1 </li>
+        <li> Ordered List 2 </li>
+        <li> Ordered List 3 </li>
+      </ol>
+      <ul>
+        <li> Unordered List 1 </li>
+        <li> Unordered List 2 </li>
+        <li> Unordered List 3 </li>
+      </ul>
+      <span> This text is in Span Element </span>
     </div>
   )
 }
